@@ -8,8 +8,7 @@
 
 <script>
 
-    var params = window.location.search.split(':');
-    var id = params[1].replace(/\W/g, '');
+    var id= window.location.search.replace(/\W/g, '');
     var url = 'https://i.imgur.com/' + id + '.mp4'
     document.getElementById('video_container').innerHTML = '<video style="width: 100%; height: 100%" playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted"><source type="video/mp4" src="' + url + '" /></video>';
 </script>
